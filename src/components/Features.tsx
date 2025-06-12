@@ -25,7 +25,7 @@ export default function Features() {
 					</p>
 				</div>
 
-				<div className="flex items-center flex-wrap gap-x-20 gap-y-16 justify-center w-fit overflow-hidden">
+				<div className="flex items-center flex-wrap gap-x-20 gap-y-10 justify-center w-fit overflow-hidden">
 					{[companyOne, companyTwo, companyFour, companyFive, companySix].map((company, index) => {
 						const altText = `Company ${["One", "Two", "Four", "Five", "Six"][index]}`;
 						const isDark = theme === "light";
