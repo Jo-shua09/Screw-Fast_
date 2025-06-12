@@ -16,7 +16,7 @@ export default function Features() {
 	const { theme } = useTheme();
 
 	return (
-		<div className="w-full section">
+		<div className="w-full section !py-30">
 			<header className="flex flex-col gap-y-16 items-center justify-center text-center">
 				<div className="!space-y-2">
 					<h3 className="text-5xl font-semibold !normal-case">Trusted by Industry Leaders</h3>
@@ -25,7 +25,7 @@ export default function Features() {
 					</p>
 				</div>
 
-				<div className="flex items-center gap-20 justify-center w-fit overflow-hidden">
+				<div className="flex items-center flex-wrap gap-x-20 gap-y-16 justify-center w-fit overflow-hidden">
 					{[companyOne, companyTwo, companyFour, companyFive, companySix].map((company, index) => {
 						const altText = `Company ${["One", "Two", "Four", "Five", "Six"][index]}`;
 						const isDark = theme === "dark";

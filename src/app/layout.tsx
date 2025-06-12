@@ -25,7 +25,7 @@ export default function RootLayout({
 			<body className={`${font.className}  !px-20 antialiased max-w-[180rem] w-full !m-auto`}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 					<Navbar />
-					<div className=" max-w-[168rem] !m-auto w-full md:!px-10">
+					<div className=" max-w-[168rem] !m-auto w-full lg:!px-10">
 						<main>{children}</main>
 						<Footer />
 					</div>

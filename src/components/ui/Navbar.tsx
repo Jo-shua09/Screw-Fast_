@@ -21,7 +21,7 @@ export default function Navbar() {
 
 	return (
 		<div className="w-full !py-10">
-			<div className="w-full sticky top-0 z-50 !py-10 md:!py-6 border backdrop-blur-2xl bg-transparent shadow border-yellow-100/20 rounded-full !px-14 flex items-center justify-between">
+			<div className="w-full sticky top-0 z-50 !py-10 lg:!py-6 border backdrop-blur-2xl bg-transparent shadow border-yellow-100/20 rounded-full !px-14 flex items-center justify-between">
 				<div className="w-full h-full">
 					{theme === "dark" ? (
 						<Image
