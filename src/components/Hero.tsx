@@ -15,7 +15,7 @@ export default function Hero() {
 	return (
 		<div className="w-full h-full flex !flex-wrap lg:!mt-0 !mt-20 lg:!flex-nowrap items-center justify-between gap-20">
 			<div className="w-full lg:flex-1 text-center lg:text-left">
-				<h1 className="lg:text-8xl text-6xl lg:leading-30 font-semibold">
+				<h1 className="lg:text-8xl text-7xl leading-30 font-semibold">
 					Equip Your Projects with <span className="text-yellow-500">ScrewFast</span>
 				</h1>
 
