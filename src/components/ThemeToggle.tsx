@@ -19,9 +19,9 @@ export default function ThemeToggle() {
 	return (
 		<button className="text-3xl" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
 			{theme === "dark" ? (
-				<FaMoon className="text-5xl transition-colors duration-300 cursor-pointer hover:bg-neutral-600 !p-3 rounded-full hover:text-orange-500" />
-			) : (
 				<AiOutlineSun className="text-5xl transition-colors duration-300 cursor-pointer hover:bg-neutral-600 !p-3 rounded-full hover:text-orange-500" />
+			) : (
+				<FaMoon className="text-5xl transition-colors duration-300 cursor-pointer hover:bg-neutral-600 !p-3 rounded-full hover:text-orange-500" />
 			)}
 		</button>
 	);
