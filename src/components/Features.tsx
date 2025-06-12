@@ -1,11 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import featureImage from "@/assets/images/features-image.avif";
+import featureImage from "@/assets/images/features/features-image.avif";
+import companyOne from "@/assets/images/features/companyOne.png";
+import companyTwo from "@/assets/images/features/companyTwo.png";
+import companyThree from "@/assets/images/features/companyThree.png";
+import companyFour from "@/assets/images/features/companyFour.png";
+import companyFive from "@/assets/images/features/companyFive.png";
+import companySix from "@/assets/images/features/companySix.png";
 import GlareHover from "./animations/GlareHover";
 import FeatureListOne from "./FeatureListOne";
+import { useTheme } from "next-themes";
 
 export default function Features() {
+	const { theme } = useTheme();
+
 	return (
 		<div className="w-full section">
 			<header className="flex flex-col gap-y-16 items-center justify-center text-center">
@@ -16,10 +25,27 @@ export default function Features() {
 					</p>
 				</div>
 
-				<div className="flex items-center gap-10 justify-center w-full">hello</div>
+				<div className="flex items-center gap-20 justify-center w-fit overflow-hidden">
+					{[companyOne, companyTwo, companyFour, companyFive, companySix].map((company, index) => {
+						const altText = `Company ${["One", "Two", "Four", "Five", "Six"][index]}`;
+						const isDark = theme === "dark";
+						const isCompanyThreeReplacement = index === 0 && !isDark; // Replace companyOne with companyThree in light mode
+
+						return (
+							<Image
+								key={index}
+								src={isCompanyThreeReplacement ? companyThree : company}
+								alt={altText}
+								width={250}
+								height={150}
+								className={`w-[20rem] h-[7rem] object-contain ${!isDark ? "bg-neutral-600/50 !px-5 !py-1" : ""}`}
+							/>
+						);
+					})}
+				</div>
 			</header>
 
-			<div className="w-fit h-full !m-auto !mt-20">
+			<div className="w-fit h-full !m-auto !mt-30">
 				<GlareHover
 					glareColor="#ffffff"
 					glareOpacity={0.3}
