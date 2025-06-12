@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
-			<body className={`${font.className}  !px-20 antialiased max-w-[180rem] w-full !m-auto`}>
+			<body className={`${font.className} !px-10 md:!px-20 antialiased max-w-[180rem] w-full !m-auto`}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 					<Navbar />
 					<div className=" max-w-[168rem] !m-auto w-full lg:!px-10">
