@@ -31,9 +31,16 @@ export default function Hero() {
 				<div className="w-full flex items-center gap-5 !mt-16">
 					<div className="flex items-center border-r-[.1rem] border-neutral-600 !pr-16">
 						<Image src={personOne} alt="Person One" width={30} height={30} className="rounded-full" />
-						<Image src={personTwo} alt="Person Two" width={30} height={30} className="rounded-full !-ml-5" />
-						<Image src={personThree} alt="Person Three" width={30} height={30} className="rounded-full !-ml-5" />
-						<Image src={personFour} alt="Person Four" width={30} height={30} className="rounded-full !-ml-5" />
+						{[personTwo, personThree, personFour].map((person, index) => (
+							<Image
+								key={index}
+								src={person}
+								alt={`Person ${index + 2}`}
+								width={30}
+								height={30}
+								className="rounded-full !-ml-5"
+							/>
+						))}
 						<div className="bg-black rounded-full text-white font-semibold text-2xl !-ml-5 w-[30px] h-[30px] flex items-center justify-center">
 							7k+
 						</div>
