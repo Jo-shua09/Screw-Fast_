@@ -28,7 +28,7 @@ export default function Features() {
 				<div className="flex items-center flex-wrap gap-x-20 gap-y-16 justify-center w-fit overflow-hidden">
 					{[companyOne, companyTwo, companyFour, companyFive, companySix].map((company, index) => {
 						const altText = `Company ${["One", "Two", "Four", "Five", "Six"][index]}`;
-						const isDark = theme === "dark";
+						const isDark = theme === "light";
 						const isCompanyThreeReplacement = index === 0 && !isDark; // Replace companyOne with companyThree in light mode
 
 						return (
