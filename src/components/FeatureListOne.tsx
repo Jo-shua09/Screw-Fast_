@@ -2,10 +2,8 @@ import React from "react";
 
 export default function FeatureListOne() {
 	return (
-		<div>
-			<div className="w-full section">
-				<div className="">hello</div>
-			</div>
+		<div className="w-full section !py-30">
+			<div className="">hello</div>
 		</div>
 	);
 }
