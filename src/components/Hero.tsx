@@ -41,7 +41,7 @@ export default function Hero() {
 								className="rounded-full !-ml-5"
 							/>
 						))}
-						<div className="bg-black rounded-full text-white font-semibold text-2xl absolute right-3 sm:right-4 lg:right-6 lg:right-8 w-[30px] h-[30px] flex items-center justify-center">
+						<div className="bg-black rounded-full text-white font-semibold text-2xl absolute right-3 sm:right-4 md:right-6 lg:right-8 w-[30px] h-[30px] flex items-center justify-center">
 							7k+
 						</div>
 					</div>
