@@ -74,7 +74,7 @@ export default function Hero() {
 					transitionDuration={800}
 					playOnce={false}
 				>
-					<Image src={HeroImage} alt="Hero Image" width={800} height={800} className="w-full h-full object-contain" />
+					<Image src={HeroImage} alt="Hero Image" width={1000} height={1000} className="w-full h-full object-contain" />
 				</GlareHover>
 			</div>
 		</div>
