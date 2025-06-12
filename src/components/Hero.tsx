@@ -15,7 +15,7 @@ export default function Hero() {
 	return (
 		<div className="w-full h-full flex !flex-wrap lg:!mt-0 !mt-20 lg:!flex-nowrap items-center justify-between gap-20">
 			<div className="w-full lg:flex-1 text-center lg:text-left">
-				<h1 className="text-8xl lg:leading-30 font-semibold">
+				<h1 className="lg:text-8xl text-6xl lg:leading-30 font-semibold">
 					Equip Your Projects with <span className="text-yellow-500">ScrewFast</span>
 				</h1>
 
@@ -23,7 +23,7 @@ export default function Hero() {
 					Top-quality hardware tools and expert construction services for every project need.
 				</p>
 
-				<div className="flex items-center gap-x-5 gap-y-10 justify-center lg:justify-start lg:flex-nowrap flex-wrap">
+				<div className="flex items-center lg:!mt-0 !mt-16 gap-x-5 gap-y-10 justify-center lg:justify-start lg:flex-nowrap flex-wrap">
 					<ButtonOne wFull={true} buttonText="start exploring" />
 					<Buttontwo wFull={true} buttonText="contact sales team" />
 				</div>
