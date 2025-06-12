@@ -11,6 +11,7 @@ import companySix from "@/assets/images/features/companySix.png";
 import GlareHover from "./animations/GlareHover";
 import FeatureListOne from "./FeatureListOne";
 import { useTheme } from "next-themes";
+import FeatureShowcase from "./FeatureShowcase";
 
 export default function Features() {
 	const { theme } = useTheme();
@@ -68,6 +69,10 @@ export default function Features() {
 
 			<div className="w-full">
 				<FeatureListOne />
+			</div>
+
+			<div className="w-full">
+				<FeatureShowcase />
 			</div>
 		</div>
 	);
