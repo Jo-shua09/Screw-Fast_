@@ -40,7 +40,7 @@ export default function Features() {
 								width={250}
 								height={150}
 								className={`w-[20rem] h-[7rem] object-contain ${
-									!isDark ? "bg-neutral-600/50 !px-5 !py-1" : "bg-neutral-600/50 !px-5 !py-1"
+									!isDark ? "bg-neutral-600/50 !px-5 !py-1" : "bg-neutral-600 !px-5 !py-1"
 								}`}
 							/>
 						);
