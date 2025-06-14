@@ -9,7 +9,8 @@ export const features = [
 		description:
 			"Empower your projects with ScrewFast's cutting-edge-tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions",
 		image: showcaseImageOne,
-		imageClass: "w-[60rem] h-[55%] object-contain rounded-2xl !shadow-[1px_1px_2px_rgba(0,0,0,0.5)]",
+		imageClass:
+			"lg:w-[60rem] lg:h-[55%] w-[50rem] h-full object-contain rounded-2xl !shadow-[1px_1px_2px_rgba(0,0,0,0.5)]",
 	},
 	{
 		icon: "IoAppsSharp",
@@ -17,7 +18,8 @@ export const features = [
 		description:
 			"Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
 		image: showcaseImageTwo,
-		imageClass: "w-[60rem] h-[80rem] object-cover rounded-2xl !shadow-[1px_1px_2px_rgba(0,0,0,0.5)]",
+		imageClass:
+			"lg:w-[60rem] lg:h-[80rem] w-[50rem] h-full object-cover rounded-2xl !shadow-[1px_1px_2px_rgba(0,0,0,0.5)]",
 	},
 	{
 		icon: "BsBuildings",
@@ -26,6 +28,6 @@ export const features = [
 			"Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their existence.",
 		image: showcaseImageThree,
 		imageClass:
-			"w-[60rem] h-[55%] bg-neutral-700 !p-3 object-contain rounded-2xl !shadow-[1px_1px_2px_rgba(0,0,0,0.5)]",
+			"lg:w-[60rem] lg:h-[55%] bg-neutral-700 !p-3 w-[50rem] h-full object-contain rounded-2xl !shadow-[1px_1px_2px_rgba(0,0,0,0.5)]",
 	},
 ];

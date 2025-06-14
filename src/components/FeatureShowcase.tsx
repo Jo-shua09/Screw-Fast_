@@ -16,8 +16,8 @@ export default function FeatureShowcase() {
 
 	return (
 		<div className="w-full section !m-auto">
-			<div className="flex items-center w-fit !m-auto">
-				<div className="w-fit !-mr-28 z-10">
+			<div className="flex items-center lg:flex-row flex-col w-fit !m-auto">
+				<div className="w-fit lg:!-mr-28 z-10 !-mb-28">
 					{features.map((feature, index) => (
 						<div
 							key={index}
@@ -37,7 +37,7 @@ export default function FeatureShowcase() {
 					))}
 				</div>
 
-				<div className="w-fit rounded-2xl bg-neutral-800 lg:!py-56 !m-auto flex lg:!pl-56 lg:!pr-20">
+				<div className="w-fit rounded-2xl bg-neutral-800 lg:!py-56 !py-28 !pt-52 !px-20 !m-auto flex lg:!pl-56 lg:!pr-20">
 					<div className="w-full max-w-4xl place-self-end">
 						<h2 className="text-5xl font-semibold !normal-case text-white">
 							Customize <span className="text-yellow-500">ScrewFast&apos;s</span> offerings to perfectly suit your
