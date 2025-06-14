@@ -1,54 +1,74 @@
-import { BiHotel } from "react-icons/bi";
+import { BsBuildings } from "react-icons/bs";
 import { FaTools } from "react-icons/fa";
-import { GrDashboard } from "react-icons/gr";
+import { IoAppsSharp } from "react-icons/io5";
+import Image from "next/image";
+import { useState } from "react";
+import { features } from "@/assets/data_files/features";
 
 export default function FeatureShowcase() {
+	const [activeImage, setActiveImage] = useState<number>(0);
+
+	const iconMap: Record<string, React.ElementType> = {
+		BsBuildings,
+		FaTools,
+		IoAppsSharp,
+	};
+
 	return (
-		<div className="w-full section">
-			<div className="flex items-center">
-				<div className="w-full">
-					
+		<div className="w-full section !m-auto">
+			<div className="flex items-center w-fit !m-auto">
+				<div className="w-fit !-mr-28 z-10">
+					{features.map((feature, index) => (
+						<div
+							key={index}
+							className={`transition-opacity duration-300 ${
+								activeImage === index ? "opacity-100" : "opacity-0 absolute top-0 left-0"
+							}`}
+							style={{ display: activeImage === index ? "block" : "none" }}
+						>
+							<Image
+								src={feature.image}
+								alt={`showcase image ${index + 1}`}
+								width={1000}
+								height={1000}
+								className={feature.imageClass}
+							/>
+						</div>
+					))}
 				</div>
 
-				<div className="w-full rounded-xl bg-neutral-800 !py-56 !pl-56 !pr-20 ">
+				<div className="w-fit rounded-2xl bg-neutral-800 lg:!py-56 !m-auto flex lg:!pl-56 lg:!pr-20">
 					<div className="w-full max-w-4xl place-self-end">
 						<h2 className="text-5xl font-semibold !normal-case text-white">
 							Customize <span className="text-yellow-500">ScrewFast&apos;s</span> offerings to perfectly suit your
 							hardware and construction needs.
 						</h2>
+
 						<div className="flex flex-col gap-10 !mt-16">
-							<div className="w-full rounded-xl !p-10 cursor-pointer hover:bg-neutral-700 transition-colors duration-200 hover:shadow-[1px_1px_2px_rgba(0,0,0,0.5)] flex gap-5 items-start">
-								<FaTools className={`text-6xl text-white h-fit`} />
-								<div className="!space-y-6">
-									<h4 className={`text-3xl font-semibold text-white`}>cutting-Edge tools</h4>
-									<p className="text-2xl text-neutral-400 font-normal !normal-case">
-										Empower your projects wiwth ScrewFast&apos;s cutting-edge-tools. Experience enhanced efficiency in
-										construction management with our sophisticated automated solutions
-									</p>
-								</div>
-							</div>
-
-							<div className="w-full rounded-xl !p-10 cursor-pointer hover:bg-neutral-700 transition-colors duration-200 hover:shadow-[1px_1px_2px_rgba(0,0,0,0.5)] flex gap-5 items-start">
-								<GrDashboard className={`text-white text-6xl h-fit`} />
-								<div className="!space-y-6">
-									<h4 className={`text-3xl font-semibold text-white`}>intuitive dashboard</h4>
-									<p className="text-2xl text-neutral-400 font-normal !normal-case">
-										Navigate with ease using ScrewFast&apos;s intuitive dashboards. Set up and oversee your projects
-										seamlessly, with iser-friendly interfaces designed for quick and effective workflow management.
-									</p>
-								</div>
-							</div>
-
-							<div className="w-full rounded-xl !p-10 cursor-pointer hover:bg-neutral-700 transition-colors duration-200 hover:shadow-[1px_1px_2px_rgba(0,0,0,0.5)] flex gap-5 items-start">
-								<BiHotel className={`text-6xl text-white h-fit`} />
-								<div className="!space-y-6">
-									<h4 className={`text-3xl font-semibold text-white`}>robust features</h4>
-									<p className="text-2xl text-neutral-400 font-normal !normal-case">
-										Minimize complexity, maximize productivity. ScrewFast&apos;s robust features are engineered to
-										streamline your construction process, delivering results that stand out for their existence.
-									</p>
-								</div>
-							</div>
+							{features.map((feature, index) => {
+								const Icon = iconMap[feature.icon];
+								return (
+									<div
+										key={index}
+										className={`w-full rounded-2xl !p-10 cursor-pointer transition-colors duration-200 hover:shadow-[1px_1px_2px_rgba(0,0,0,0.5)] flex gap-5 items-start ${
+											activeImage === index ? "bg-neutral-700" : "hover:bg-neutral-700"
+										}`}
+										onClick={() => setActiveImage(index)}
+									>
+										<Icon className={`${activeImage === index ? "text-orange-500" : "text-white"} text-7xl h-fit`} />
+										<div className="!space-y-6">
+											<h4
+												className={` 
+												${activeImage === index ? "text-orange-500" : "text-white"}
+												text-3xl font-semibold`}
+											>
+												{feature.title}
+											</h4>
+											<p className="text-2xl text-neutral-400 font-normal !normal-case">{feature.description}</p>
+										</div>
+									</div>
+								);
+							})}
 						</div>
 					</div>
 				</div>
