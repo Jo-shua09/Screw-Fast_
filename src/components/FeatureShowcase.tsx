@@ -17,16 +17,16 @@ export default function FeatureShowcase() {
 	return (
 		<div className="w-full section !m-auto">
 			<div className="flex items-center lg:flex-row flex-col w-fit !m-auto">
-				<div className="w-fit lg:!-mr-28 z-10 !-mb-28">
+				<div className="w-fit lg:!-mr-28 z-10 lg:!-mb-0 !-mb-30">
 					{features.map((feature, index) => (
 						<div
 							key={index}
-							className={`transition-opacity duration-300 ${
+							className={`transition-opacity duration-300 lg:!px-0 !px-20 ${
 								activeImage === index ? "opacity-100" : "opacity-0 absolute top-0 left-0"
 							}`}
 							style={{ display: activeImage === index ? "block" : "none" }}
 						>
-							<Image
+							<																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
 								src={feature.image}
 								alt={`showcase image ${index + 1}`}
 								width={1000}

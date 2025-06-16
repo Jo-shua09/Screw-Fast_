@@ -12,6 +12,7 @@ import GlareHover from "./animations/GlareHover";
 import FeatureListOne from "./FeatureListOne";
 import { useTheme } from "next-themes";
 import FeatureShowcase from "./FeatureShowcase";
+import FeatureListTwo from "./FeatureListTwo";
 
 export default function Features() {
 	const { theme } = useTheme();
@@ -67,13 +68,9 @@ export default function Features() {
 				</GlareHover>
 			</div>
 
-			<div className="w-full">
-				<FeatureListOne />
-			</div>
-
-			<div className="w-full">
-				<FeatureShowcase />
-			</div>
+			<FeatureListOne />
+			<FeatureShowcase />
+			<FeatureListTwo />
 		</div>
 	);
 }
