@@ -1,4 +1,5 @@
-// import Image from "next/image";
+import Image from "next/image";
+import personImage from "@/assets/images/features/person.avif";
 
 export default function FeatureListTwo() {
 	return (
@@ -18,8 +19,14 @@ export default function FeatureListTwo() {
 							ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times
 							are phenomenal. Truly a game-changer in hardware and construction support!
 						</p>
-						<div className="flex items-center gap-5">
-							{/* <Image /> */}
+						<div className="flex items-center gap-5 !pt-5">
+							<Image
+								src={personImage}
+								alt="Person Image"
+								width={100}
+								height={100}
+								className="rounded-full w-[4.5rem] h-[4.5rem] object-cover shadow-lg"
+							/>
 							<div className="!space-y-1">
 								<h4 className="text-3xl font-semibold">Samantha Ruiz</h4>
 								<p className="text-2xl font-normal text-neutral-500">Chief Operating Officer | ConstructIt Inc.</p>
