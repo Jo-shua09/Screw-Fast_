@@ -50,7 +50,7 @@ export default function FeatureShowcase() {
 								return (
 									<div
 										key={index}
-										className={`w-full rounded-2xl !p-10 cursor-pointer transition-colors duration-200 hover:shadow-[1px_1px_2px_rgba(0,0,0,0.5)] flex gap-5 items-start ${
+										className={`w-full rounded-2xl md:!p-10 !p-5 cursor-pointer transition-colors duration-200 hover:shadow-[1px_1px_2px_rgba(0,0,0,0.5)] flex gap-5 items-start ${
 											activeImage === index ? "bg-neutral-700" : "hover:bg-neutral-700"
 										}`}
 										onClick={() => setActiveImage(index)}
