@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Sarabun } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { ThemeProvider } from "next-themes";
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 	description: "ScrewFast - Your Fast and Reliable Screw Supplier",
 };
 
-const font = Sarabun({
+const font = Inter({
 	weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 	subsets: ["latin"],
 });
