@@ -1,6 +1,6 @@
 import Image from "next/image";
 import personImage from "@/assets/images/features/person.avif";
-import { BsArrowUp } from "react-icons/bs";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function FeatureListTwo() {
 	return (
@@ -53,7 +53,7 @@ export default function FeatureListTwo() {
 					<div className="!mb-12 md:absolute md:right-0 md:top-0 md:!mb-0 md:h-1/2 md:w-1/2 flex flex-col items-center justify-center !p-4">
 						<div className="!space-y-6">
 							<div className="flex items-end gap-3">
-								<BsArrowUp className="text-4xl text-orange-500" />
+								<FaArrowUp className="text-4xl text-orange-500" />
 								<h1 className="text-7xl font-bold">35%</h1>
 							</div>
 							<p className="text-neutral-500 font-medium normal-case text-3xl">
@@ -65,7 +65,7 @@ export default function FeatureListTwo() {
 					<div className="!mb-12 md:absolute md:bottom-0 md:left-0 md:!mb-0 md:h-1/2 md:w-1/2 flex flex-col items-center justify-center !p-4">
 						<div className="!space-y-6">
 							<div className="flex items-end gap-3">
-								<BsArrowUp className="text-4xl text-orange-500" />
+								<FaArrowUp className="text-4xl text-orange-500" />
 								<h1 className="text-7xl font-bold">15.3%</h1>
 							</div>
 							<p className="text-neutral-500 font-medium normal-case text-3xl">
