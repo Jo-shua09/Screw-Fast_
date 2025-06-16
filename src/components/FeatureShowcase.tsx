@@ -26,7 +26,7 @@ export default function FeatureShowcase() {
 							}`}
 							style={{ display: activeImage === index ? "block" : "none" }}
 						>
-							<																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+							<Image
 								src={feature.image}
 								alt={`showcase image ${index + 1}`}
 								width={1000}
