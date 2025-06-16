@@ -10,7 +10,7 @@ export const ButtonOne = ({ buttonText, wFull }: ButtonProp) => {
 			} flex gap-6 items-center lg:!py-5 !py-7 text-center justify-center text-nowrap !px-6 cursor-pointer hover:scale-95 text-white  transition-all duration-300 shadow-2xl rounded-xl bg-orange-500 font-semibold text-[1.7rem]`}
 		>
 			{buttonText}
-			<MdOutlineKeyboardArrowRight className="text-3xl" />
+			<MdOutlineKeyboardArrowRight className="text-3xl lg:block hidden" />
 		</button>
 	);
 };
