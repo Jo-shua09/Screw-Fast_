@@ -13,7 +13,7 @@ const PricingSection: React.FC = () => {
 
 			<div className="lg:w-[80%] w-full flex-wrap lg:flex-nowrap lg:gap-0 !m-auto gap-10 flex items-center justify-center !mt-20">
 				{/* Starter Kit */}
-				<div className="bg-gray-900 rounded-xl w-full lg:w-[60%] !px-16 !py-20 shadow-sm">
+				<div className="bg-gray-900 rounded-xl text-white w-full lg:w-[60%] !px-16 !py-20 shadow-sm">
 					<div className="w-full !space-y-1">
 						<h3 className="text-5xl font-semibold">{pricingData.starterKit.name}</h3>
 						<p className="text-2xl font-medium !normal-case text-gray-500">{pricingData.starterKit.description}</p>
@@ -40,7 +40,7 @@ const PricingSection: React.FC = () => {
 				</div>
 
 				{/* Professional Toolbox */}
-				<div className="bg-gradient-to-r from-orange-400 to-orange-800 rounded-xl w-full !px-16 !py-20 shadow-sm">
+				<div className="bg-gradient-to-r text-white from-orange-400 to-orange-800 rounded-xl w-full !px-16 !py-20 shadow-sm">
 					<div className="!py-1 !px-4 text-2xl rounded-full text-orange-800 font-semibold bg-orange-400 !float-right">
 						{pricingData.badge}
 					</div>
@@ -75,7 +75,7 @@ const PricingSection: React.FC = () => {
 				<p className="font-medium text-2xl text-neutral-600">{pricingData.thirdOption}</p>
 				<a
 					href="#"
-					className="bg-neutral-600 rounded-xl text-[1.7rem] flex items-center font-semibold !py-4 !px-7 hover:scale-95"
+					className="bg-neutral-600 rounded-xl text-[1.7rem] text-white flex items-center font-semibold !py-4 !px-7 hover:scale-95"
 				>
 					{pricingData.btnText}
 				</a>
