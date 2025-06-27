@@ -1,6 +1,6 @@
 "use client";
 
-import faqData from "@/assets/data/faqs.json";
+// import faqData from "@/assets/data/faqs.json";
 
 export default function FAQ() {
 	return (
