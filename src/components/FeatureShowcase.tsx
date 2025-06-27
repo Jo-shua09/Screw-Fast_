@@ -3,7 +3,7 @@ import { FaTools } from "react-icons/fa";
 import { IoAppsSharp } from "react-icons/io5";
 import Image from "next/image";
 import { useState } from "react";
-import { features } from "@/assets/data_files/features";
+import { features } from "@/assets/data/features";
 
 export default function FeatureShowcase() {
 	const [activeImage, setActiveImage] = useState<number>(0);
