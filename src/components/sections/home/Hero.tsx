@@ -1,7 +1,7 @@
 "use client";
 
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
-import { ButtonOne, Buttontwo } from "./Button";
+import { ButtonOne, Buttontwo } from "../../Button";
 import Image from "next/image";
 import HeroImage from "@/assets/images/hero-image.avif";
 import personOne from "@/assets/images/person/personOne.webp";
@@ -9,7 +9,7 @@ import personTwo from "@/assets/images/person/personTwo.webp";
 import personThree from "@/assets/images/person/personThree.webp";
 import personFour from "@/assets/images/person/personFour.webp";
 
-import GlareHover from "./animations/GlareHover";
+import GlareHover from "../../animations/GlareHover";
 
 export default function Hero() {
 	return (

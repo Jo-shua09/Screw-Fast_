@@ -8,7 +8,7 @@ import companyThree from "@/assets/images/features/companyThree.png";
 import companyFour from "@/assets/images/features/companyFour.png";
 import companyFive from "@/assets/images/features/companyFive.png";
 import companySix from "@/assets/images/features/companySix.png";
-import GlareHover from "./animations/GlareHover";
+import GlareHover from "../../animations/GlareHover";
 import FeatureListOne from "./FeatureListOne";
 import { useTheme } from "next-themes";
 import FeatureShowcase from "./FeatureShowcase";

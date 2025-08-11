@@ -1,15 +1,17 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import PricingSection from "@/components/Pricing";
+import Hero from "@/components/sections/home/Hero";
+import Features from "@/components/sections/home/Features";
+import PricingSection from "@/components/sections/home/Pricing";
+import FAQ from "@/components/sections/home/FAQ";
 
 export default function Home() {
-	return (
-		<div className="w-full h-full">
-			<div className="">
-				<Hero />
-				<Features />
-				<PricingSection />
-			</div>
-		</div>
-	);
+  return (
+    <div className="w-full h-full">
+      <div className="">
+        <Hero />
+        <Features />
+        <PricingSection />
+        <FAQ />
+      </div>
+    </div>
+  );
 }
