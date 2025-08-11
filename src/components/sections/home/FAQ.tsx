@@ -13,7 +13,7 @@ export default function FAQ() {
 
   return (
     <div className="w-full section !py-30">
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-12 md:flex-nowrap flex-wrap">
         {/* Left section */}
         <div className="w-full flex-1/2">
           <div className="!space-y-5 max-w-2xl">
