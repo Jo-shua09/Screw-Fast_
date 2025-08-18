@@ -16,40 +16,47 @@
 } */
 
 * {
-	box-sizing: border-box;
-	outline: none;
-	transition: all 0.2s ease-in-out;
-	text-transform: capitalize;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
 }
 
 .section {
-	padding: 3rem 0;
+  padding: 3rem 0;
 }
 
-body{
-	margin: 0;
-	padding: 0;
+.section-page {
+  padding: 3rem 5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 @media screen and (max-width: 991px) {
-	html {
-		font-size: 55%;
-	}
+  html {
+    font-size: 55%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-	html {
-		font-size: 52.5%;
-	}
+  html {
+    font-size: 52.5%;
+  }
 }
 
 @media screen and (max-width: 450px) {
-	html {
-		font-size: 50%;
-	}
+  html {
+    font-size: 50%;
+  }
+  .section-page {
+    padding: 3rem;
+  }
 }

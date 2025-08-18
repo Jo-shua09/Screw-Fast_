@@ -7,7 +7,7 @@ import Banner from "@/components/ui/Banner";
 export default function Home() {
   return (
     <div className="w-full h-full">
-      <div className="">
+      <div className="px-20">
         <Hero />
         <Features />
         <PricingSection />

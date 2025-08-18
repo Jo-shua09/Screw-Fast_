@@ -25,7 +25,7 @@ export default function FAQ() {
         {/* Right section */}
         <div className="space-y-7 w-full">
           {faqData.faqs.map((faq, index) => (
-            <div key={index} className="w-full border-b last:border-b-0 border-neutral-500 py-5">
+            <div key={index} className="w-full border-b last:border-b-0 border-neutral-500 py-5 pb-10">
               {/* Question */}
               <div className="flex items-center group justify-between cursor-pointer" onClick={() => toggleFAQ(index)}>
                 <h3 className="text-4xl !normal-case group-hover:text-neutral-400 font-medium">{faq.question}</h3>
@@ -33,7 +33,7 @@ export default function FAQ() {
               </div>
 
               {/* Answer */}
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-96 mt-4" : "max-h-0"}`}>
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-96 pt-6" : "max-h-0"}`}>
                 <p className="text-neutral-500 text-3xl !normal-case">{faq.answer}</p>
               </div>
             </div>
