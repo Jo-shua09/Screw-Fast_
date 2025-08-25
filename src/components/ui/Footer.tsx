@@ -7,8 +7,8 @@ import { FaGithub, FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <div className={`w-full !text-white section-page !mt-20 bg-neutral-950`}>
-      <div className="!py-16 flex items-start justify-between gap-12 w-full">
-        <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12">
+      <div className="!py-16 flex md:flex-nowrap flex-wrap items-start justify-between gap-y-20 gap-x-12 w-full">
+        <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-20 gap-x-12">
           <div className="w-fit">
             <Image src="/screwfast_logo.svg" alt="ScrewFast Logo" width={100} height={100} className="w-[20rem] object-contain" />
           </div>
@@ -41,7 +41,7 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Enter your email"
-              className="text-white font-medium bg-neutral-500 rounded-2xl pl-4 w-full h-[6rem] text-2xl !normal-case"
+              className="text-white focus:border border-orange-600 font-medium bg-neutral-500 rounded-2xl pl-4 w-full h-[6rem] text-2xl !normal-case"
             />
             <input
               type="submit"
@@ -52,11 +52,13 @@ export default function Footer() {
           <p className="text-3xl font-medium text-neutral-500 !normal-case">Stay updated with the latest tools and exclusive deals.</p>
         </div>
       </div>
-      <div className="!pt-20 flex justify-between gap-12 m-auto">
-        <p className="!normal-case text-2xl font-medium">
+
+      <div className="!pt-20 flex md:flex-nowrap flex-wrap justify-center md:justify-between gap-12 !m-auto">
+        <p className="!normal-case text-2xl font-medium w-full md:block flex place-content-center">
           © 2025 ScrewFast. All rights reserved Tuma.<span className="font-bold text-orange-600">dev</span>
         </p>
-        <div className="flex items-center gap-8">
+
+        <div className="flex items-center gap-8 w-full md:place-content-end place-content-center">
           <div className="p-4 cursor-pointer rounded-xl hover:bg-neutral-700">
             <FaFacebook className="text-4xl" />
           </div>

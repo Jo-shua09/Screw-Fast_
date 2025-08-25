@@ -8,8 +8,8 @@ import personOne from "@/assets/images/person/personOne.webp";
 import personTwo from "@/assets/images/person/personTwo.webp";
 import personThree from "@/assets/images/person/personThree.webp";
 import personFour from "@/assets/images/person/personFour.webp";
-
 import GlareHover from "../../animations/GlareHover";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -24,7 +24,7 @@ export default function Hero() {
         </p>
 
         <div className="flex items-center lg:!mt-0 !mt-16 gap-x-5 gap-y-10 justify-center lg:justify-start lg:flex-nowrap flex-wrap">
-          <ButtonOne wFull={true} buttonText="start exploring" />
+          <ButtonOne wFull={true} buttonText="start exploring" icon={<MdOutlineKeyboardArrowRight className="text-3xl lg:block hidden" />} />
           <Buttontwo wFull={true} buttonText="contact sales team" />
         </div>
 
