@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import faqData from "@/assets/data/faqs.json";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -15,13 +15,12 @@ interface FAQItem {
 //   faqs: FAQItem[];
 // }
 
-export default function FAQ(): JSX.Element {
+export default function FAQ(): React.ReactElement {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number): void => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
 
   return (
     <div className="w-full section !py-30">
@@ -36,7 +35,7 @@ export default function FAQ(): JSX.Element {
 
         {/* Right section */}
         <div className="space-y-7 w-full">
-{faqData.faqs.map((faq: FAQItem, index: number) => (
+          {faqData.faqs.map((faq: FAQItem, index: number) => (
             <div key={index} className="w-full border-b last:border-b-0 border-neutral-500 py-5 pb-10">
               {/* Question */}
               <div className="flex items-center group justify-between cursor-pointer" onClick={() => toggleFAQ(index)}>
