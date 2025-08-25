@@ -4,12 +4,24 @@ import { useState } from "react";
 import faqData from "@/assets/data/faqs.json";
 import { IoIosArrowDown } from "react-icons/io";
 
-export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
+// Define types for our FAQ data
+interface FAQItem {
+  question: string;
+  answer: string;
+}
 
-  const toggleFAQ = (index) => {
+// interface FAQData {
+//   subTitle: string;
+//   faqs: FAQItem[];
+// }
+
+export default function FAQ(): JSX.Element {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number): void => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
 
   return (
     <div className="w-full section !py-30">
@@ -24,7 +36,7 @@ export default function FAQ() {
 
         {/* Right section */}
         <div className="space-y-7 w-full">
-          {faqData.faqs.map((faq, index) => (
+{faqData.faqs.map((faq: FAQItem, index: number) => (
             <div key={index} className="w-full border-b last:border-b-0 border-neutral-500 py-5 pb-10">
               {/* Question */}
               <div className="flex items-center group justify-between cursor-pointer" onClick={() => toggleFAQ(index)}>
